@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class MovieDisplay {
 
@@ -7,12 +8,10 @@ public class MovieDisplay {
 		mvInfo = new MovieInfo();
 	}
 
-	public MovieInfo movieInfo() {
-		return null;
-	}
-
-	public void currentMovie() {
+	public MovieInfo currentMovie() {
 		System.out.println("MovieDisplay : 현재 상영중인 영화 정보를 Customer에게 알려줍니다.");
+		String[] mvinfo = {mvInfo.getMvName(), mvInfo.getMvTime(), mvInfo.getMvSeats()};
+		return mvInfo;
 	}
 
 }
