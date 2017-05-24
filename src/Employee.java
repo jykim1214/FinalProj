@@ -8,11 +8,9 @@ public class Employee {
 		
 	}
 
-	public Employee(MovieDisplay movieDisplay) {
+	public void reservation() {
 		System.out.println("Employee : TicketMachine에게 A영화의 영화 정보를 물어봅니다.");
+		ticketMachine.movieInfo();
 	}
-	
-	
-	
 	
 }
