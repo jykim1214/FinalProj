@@ -13,5 +13,4 @@ public class MovieDisplay {
 		String[] mvinfo = {mvInfo.getMvName(), mvInfo.getMvTime(), mvInfo.getMvSeats()};
 		return mvInfo;
 	}
-
 }
