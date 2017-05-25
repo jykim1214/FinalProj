@@ -12,6 +12,6 @@ public class Customer {
 
 	public void reserveMovie(Employee employee) {
 		System.out.println("Customer : Employee에게 A영화를 4D로 1시에 보고싶다고 말합니다.");
-		employee.reservation(this, mvName);
+		employee.reserveMovie(this, mvName);
 	}
 }
