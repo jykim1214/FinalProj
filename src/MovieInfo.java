@@ -1,4 +1,4 @@
-
+// 영화 정보
 public class MovieInfo {
 
 	private String mvName;

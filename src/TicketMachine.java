@@ -1,4 +1,4 @@
-
+// 예매기계
 public class TicketMachine {
 
 	public MovieInfo mvInfo;

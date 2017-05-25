@@ -1,16 +1,18 @@
-import java.util.List;
-
+// 보여질 영화 정보
 public class MovieDisplay {
 
-	public MovieInfo mvInfo;
-
+	String movieName;
+	
 	public MovieDisplay() {
-		mvInfo = new MovieInfo();
 	}
 
-	public MovieInfo findCurrentMovies() {
+	public String findCurrentMovies() {
 		System.out.println("MovieDisplay : 현재 상영중인 영화 정보를 Customer에게 알려줍니다.");
-		String[] mvinfo = {mvInfo.getMvName(), mvInfo.getMvTime(), mvInfo.getMvSeats()};
-		return mvInfo;
+		return movieName;
+	}
+
+	public void getMovieInformation(MovieInfo mvInfo) {
+		movieName = mvInfo.getMvName();
+		
 	}
 }
