@@ -2,24 +2,45 @@
 public class MovieInfo {
 
 	private String mvName;
-	private String mvThreater;
-	private String mvTime;
-	private String mvSeats;
-
-	public String getMvSeats() {
-		return mvSeats;
-	}
-
-	public String getMvTime() {
-		return mvTime;
-	}
-
-	public String getMvThreater() {
-		return mvThreater;
-	}
+	private String mvRunningTime;
+	private String mvGenre;
+	private String mvAge;
+	private String mvCode; 
 
 	public String getMvName() {
 		return mvName;
+	}
+
+	public String getMvRunningTime() {
+		return mvRunningTime;
+	}
+
+	public void setMvRunningTime(String mvRunningTime) {
+		this.mvRunningTime = mvRunningTime;
+	}
+
+	public String getMvGenre() {
+		return mvGenre;
+	}
+
+	public void setMvGenre(String mvGenre) {
+		this.mvGenre = mvGenre;
+	}
+
+	public String getMvAge() {
+		return mvAge;
+	}
+
+	public void setMvAge(String mvAge) {
+		this.mvAge = mvAge;
+	}
+
+	public String getMvCode() {
+		return mvCode;
+	}
+
+	public void setMvCode(String mvCode) {
+		this.mvCode = mvCode;
 	}
 
 }

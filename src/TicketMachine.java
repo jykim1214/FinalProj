@@ -1,15 +1,38 @@
+import java.util.ArrayList;
+import java.util.List;
+
 // 예매기계
 public class TicketMachine {
 
-	public MovieInfo mvInfo;
+	ScreenInfo screenInfo;
 	
+	private String mvCode;
+	private String mvName;
+	private String mvTime;
+	private String mvTheater;
+	private int mvSeat;
+		
 	public TicketMachine() {
-		mvInfo = new MovieInfo();
+		screenInfo = new ScreenInfo();
+		mvCode = screenInfo.getMvCode();
+		mvName = screenInfo.getMvName();
+		mvTime = screenInfo.getMvTime();
+		mvTheater = screenInfo.getMvTheater();
+		mvSeat = screenInfo.getMvSeat();
+	}
+
+	public boolean isPossibleReserve() {
+		System.out.println("TicketMachine : Employee에게 영화에 대한 정보를 알려준다.");
+		if(mvSeat>=1) return true;
+		else return false;
 	}
 	
-	public String[] movieInfo() {
-		System.out.println("TicketMachine : MovieInfo를 통해 상영관에 남아있는 자리 정보를 알아봅니다.");
-		String[] seatInfo = {mvInfo.getMvName(), mvInfo.getMvThreater(), mvInfo.getMvTime(), mvInfo.getMvSeats()};
-		return seatInfo;
+	public void doReserve() {
+		System.out.println("TicketMachine : 영화를 예매하였습니다.");
 	}
+
+	
+
+	
+	
 }
