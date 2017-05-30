@@ -5,7 +5,7 @@ public class MovieInfo {
 	private String mvRunningTime;
 	private String mvGenre;
 	private String mvAge;
-	private String mvCode; 
+	private String mvCode;
 
 	public String getMvName() {
 		return mvName;
@@ -15,32 +15,16 @@ public class MovieInfo {
 		return mvRunningTime;
 	}
 
-	public void setMvRunningTime(String mvRunningTime) {
-		this.mvRunningTime = mvRunningTime;
-	}
-
 	public String getMvGenre() {
 		return mvGenre;
-	}
-
-	public void setMvGenre(String mvGenre) {
-		this.mvGenre = mvGenre;
 	}
 
 	public String getMvAge() {
 		return mvAge;
 	}
 
-	public void setMvAge(String mvAge) {
-		this.mvAge = mvAge;
-	}
-
 	public String getMvCode() {
 		return mvCode;
-	}
-
-	public void setMvCode(String mvCode) {
-		this.mvCode = mvCode;
 	}
 
 }

@@ -2,7 +2,7 @@
 public class MovieDisplay {
 
 	String mvName;
-	
+
 	public MovieDisplay() {
 	}
 
@@ -13,6 +13,6 @@ public class MovieDisplay {
 
 	public void getMovieInformation(MovieInfo mvInfo) {
 		mvName = mvInfo.getMvName();
-		
+
 	}
 }

@@ -14,7 +14,7 @@ public class Director {
 
 		System.out.println("Director : Employee를 생성합니다.");
 		Employee employee = new Employee();
-		
+
 		MovieInfo mvInfo = new MovieInfo();
 		MovieDisplay mvDisplay = new MovieDisplay();
 		mvDisplay.getMovieInformation(mvInfo);
