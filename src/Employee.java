@@ -13,7 +13,7 @@ public class Employee {
 		isSeat = ticketMachine.isPossibleReserve();
 
 		if (isSeat) {
-			System.out.println("Employee : 자리가 있어 예매 가능합니다.");
+			System.out.println("Employee : 현재 영화에 자리가 있어 예매 가능합니다.");
 			return true;
 		} else {
 			System.out.println("Employee : 해당 영화에 자리가 없습니다. 죄송합니다.");

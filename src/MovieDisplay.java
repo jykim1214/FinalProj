@@ -13,6 +13,5 @@ public class MovieDisplay {
 
 	public void getMovieInformation(MovieInfo mvInfo) {
 		mvName = mvInfo.getMvName();
-
 	}
 }

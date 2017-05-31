@@ -3,6 +3,7 @@ import java.util.List;
 
 // 예매기계
 public class TicketMachine {
+	
 	ScreenInfo screenInfo;
 
 	private String mvName;
