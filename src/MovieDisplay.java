@@ -2,6 +2,7 @@
 public class MovieDisplay {
 
 	String mvName;
+	String mvTime;
 
 	public MovieDisplay() {
 	}
@@ -11,7 +12,7 @@ public class MovieDisplay {
 		return mvName;
 	}
 
-	public void getMovieInformation(MovieInfo mvInfo) {
+	public void setMovieInformation(MovieInfo mvInfo) {
 		mvName = mvInfo.getMvName();
 	}
 }
