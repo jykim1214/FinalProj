@@ -11,7 +11,6 @@ public class Customer {
 	public void findNewMovie(MovieDisplay mvDisplay) {
 		System.out.println("Customer : MovieDisplay한테 현재 상영중인 영화정보를 받아옵니다.");
 		mvName = mvDisplay.findCurrentMovies();
-		mvTime = mvDisplay.findCurrentMovies();
 	}
 
 	public void reserveMovie(Employee employee) {

@@ -18,7 +18,9 @@ public class Director {
 		MovieInfo mvInfo = new MovieInfo();
 		ScreenInfo screenInfo = new ScreenInfo();
 		MovieDisplay mvDisplay = new MovieDisplay();
+		TicketMachine ticketMachine = new TicketMachine();
 		mvDisplay.setMovieInformation(mvInfo);
+		ticketMachine.setScreenInformation(screenInfo);
 
 		System.out.println("Director : Customer에게 최신 영화정보를 확인하도록 지시합니다.");
 		customer.findNewMovie(mvDisplay);
