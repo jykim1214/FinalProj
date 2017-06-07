@@ -1,8 +1,8 @@
 // 보여질 영화 정보
 public class MovieDisplay {
 
-	String mvName;
-	String mvTime;
+	private String mvName;
+	private String mvTime;
 
 	public MovieDisplay() {
 	}

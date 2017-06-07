@@ -10,6 +10,9 @@ public class MovieInfo {
 	private String mvAge;
 	private String mvCode;
 
+	public MovieInfo() {
+	}
+	
 	public String getMvName() {
 		return mvName;
 	}
