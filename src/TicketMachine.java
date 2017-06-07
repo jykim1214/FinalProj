@@ -12,6 +12,10 @@ public class TicketMachine {
 
 	public void setScreenInformation(ScreenInfo screenInfo) {
 		// screenInfo정보를 입력
+		mvName = screenInfo.getMvName();
+		mvTime = screenInfo.getMvTime();
+		mvTheater = screenInfo.getMvTheater();
+		mvSeat = screenInfo.getMvSeat();
 	}
 	
 	public boolean isPossibleReserve() {
