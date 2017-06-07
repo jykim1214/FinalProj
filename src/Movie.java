@@ -1,15 +1,16 @@
-import java.util.ArrayList;
-import java.util.List;
-
-// 영화 정보
-public class MovieInfo {
-
+public class Movie {
 	private String mvName;
 	private String mvRunningTime;
 	private String mvGenre;
 	private String mvAge;
-	private String mvCode;
-
+	
+	public Movie() {
+		mvName = "미녀와야수";
+		mvRunningTime = "129분";
+		mvGenre = "판타지, 뮤지컬";
+		mvAge = "전체 관람가";
+	}
+	
 	public String getMvName() {
 		return mvName;
 	}
@@ -25,9 +26,5 @@ public class MovieInfo {
 	public String getMvAge() {
 		return mvAge;
 	}
-
-	public String getMvCode() {
-		return mvCode;
-	}
-
+			
 }

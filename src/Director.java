@@ -19,6 +19,7 @@ public class Director {
 		ScreenInfo screenInfo = new ScreenInfo();
 		MovieDisplay mvDisplay = new MovieDisplay();
 		TicketMachine ticketMachine = new TicketMachine();
+		
 		mvDisplay.setMovieInformation(mvInfo);
 		ticketMachine.setScreenInformation(screenInfo);
 

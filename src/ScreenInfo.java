@@ -1,6 +1,6 @@
 // 상영정보
 public class ScreenInfo {
-	
+
 	private String mvName; // 영화이름
 	private String mvTime; // 상영시간
 	private String mvTheater; // 상영관
