@@ -7,6 +7,15 @@ public class ScreenInfo {
 	private int mvSeat = 5; // ÀÚ¸®
 
 	public ScreenInfo() {
+
+	}
+
+	public ScreenInfo(String mvName, String mvTime, String mvTheater, int mvSeat) {
+		// TODO Auto-generated constructor stub
+		this.mvName = mvName;
+		this.mvTime = mvTime;
+		this.mvTheater = mvTheater;
+		this.mvSeat = mvSeat;
 	}
 
 	public String getMvName() {

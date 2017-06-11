@@ -8,6 +8,7 @@ public class Director {
 
 	private void playScenario() {
 		System.out.println("Director : 시나리오를 시작합니다.");
+		
 		System.out.println("Director : Customer를 생성합니다.");
 		String customerName = "김진영";
 		Customer customer = new Customer(customerName);

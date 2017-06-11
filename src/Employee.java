@@ -8,9 +8,9 @@ public class Employee {
 		ticketMachine = new TicketMachine();
 	}
 
-	public boolean isPossibleReserve(Customer customer, String mvName, String mvTime) {
+	public boolean isPossibleReserve(Customer customer, String mvName) {
 		System.out.println("Employee : Ticketmachine에게 A영화에 대한 정보를 물어봅니다.");
-		isSeat = ticketMachine.isPossibleReserve();
+		isSeat = ticketMachine.isPossibleReserve(mvName);
 
 		if (isSeat) {
 			System.out.println("Employee : 현재 영화에 자리가 있어 예매 가능합니다.");
@@ -23,7 +23,7 @@ public class Employee {
 
 	public void reserveMovie(Customer customer, String mvName, String mvTime) {
 		System.out.println("Employee : 영화를 예매하겠습니다.");
-		ticketMachine.doReserve();
+		ticketMachine.doReserve(mvName, mvTime);
 	}
 
 }
