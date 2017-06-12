@@ -1,29 +1,32 @@
+import java.util.ArrayList;
+import java.util.List;
+
 // 직원
 public class Employee {
 
 	public TicketMachine ticketMachine;
-	public boolean isSeat; // 좌석 여부
+	public List<String> mvTime = new ArrayList<String>(); // 좌석 여부
 
 	public Employee() {
 		ticketMachine = new TicketMachine();
 	}
 
-	public boolean isPossibleReserve(Customer customer, String mvName) {
+	public List<String> askMvTime(Customer customer, String mvName) {
 		System.out.println("Employee : Ticketmachine에게 A영화에 대한 정보를 물어봅니다.");
-		isSeat = ticketMachine.isPossibleReserve(mvName);
-
-		if (isSeat) {
-			System.out.println("Employee : 현재 영화에 자리가 있어 예매 가능합니다.");
-			return true;
-		} else {
-			System.out.println("Employee : 해당 영화에 자리가 없습니다. 죄송합니다.");
-			return false;
+		mvTime = ticketMachine.isPossibleReserve(mvName);
+		
+		System.out.print("Employee : '"+mvName+"' 영화의 현재 예매 가능한 시간은 ");
+		for(int i=0; i<mvTime.size(); i++) {
+			System.out.print(mvTime.get(i) + ", ");
 		}
+		System.out.println("입니다.");
+		
+		return mvTime;
 	}
 
 	public void reserveMovie(Customer customer, String mvName, String mvTime) {
 		System.out.println("Employee : 영화를 예매하겠습니다.");
-		ticketMachine.doReserve(mvName, mvTime);
+		ticketMachine.doReserve(customer, mvName, mvTime);
 	}
 
 }

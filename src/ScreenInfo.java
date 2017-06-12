@@ -37,5 +37,9 @@ public class ScreenInfo {
 	public int getMvSeat() {
 		return mvSeat;
 	}
+	
+	public void setMvSeat(int mvSeat) {
+		this.mvSeat = mvSeat;
+	}
 
 }
