@@ -11,7 +11,6 @@ public class ScreenInfo {
 	}
 
 	public ScreenInfo(String mvName, String mvTime, String mvTheater, int mvSeat) {
-		// TODO Auto-generated constructor stub
 		this.mvName = mvName;
 		this.mvTime = mvTime;
 		this.mvTheater = mvTheater;

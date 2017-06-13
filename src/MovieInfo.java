@@ -7,7 +7,7 @@ public class MovieInfo {
 	private String mvAge;
 
 	public MovieInfo() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	public MovieInfo(String Name, String RunningTime, String Genre, String Age) {
