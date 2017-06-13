@@ -26,6 +26,7 @@ public class Director {
 
 		System.out.println("Director : Customer에게 최신 영화정보를 확인하도록 지시합니다.");
 		customer.findNewMovie(mvDisplay);
+		
 		customer.askMovieTime(employee);
 
 		System.out.println("Director : Customer에게 영화를 예매하도록 지시합니다.");
