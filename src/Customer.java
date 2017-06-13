@@ -4,9 +4,8 @@ import java.util.List;
 // 손님
 public class Customer {
 
-	List<String> movies = new ArrayList<String>();
-	
 	String mvName;
+	List<String> movies = new ArrayList<String>();
 	List<String> mvTime = new ArrayList<String>();
 
 	public Customer(String customerName) {
@@ -18,17 +17,16 @@ public class Customer {
 		movies.addAll(mvDisplay.findCurrentMovies());
 	}
 
-	public void reserveMovie(Employee employee) {
+	public void askMovieTime(Employee employee) {
+		// 임의로 영화를 하나 지정해준다.
+		mvName = movies.get(0);
 		System.out.println("Customer : Employee에게 '미녀와야수'영화를 보고싶다고 말합니다.");
 
-		// 임의로 영화를 하나 지정해준다.
-		mvName= movies.get(0);
-
 		mvTime = employee.askMvTime(this, mvName);
-		
-		System.out.println("Customer : '"+ mvName + "' 영화 " +mvTime.get(0)+"꺼 예매해 주세요");
+	}
+
+	public void reserveMovie(Employee employee) {
+		System.out.println("Customer : '" + mvName + "' 영화 " + mvTime.get(0) + "꺼 예매해 주세요");
 		employee.reserveMovie(this, mvName, mvTime.get(0));
-		
-		
 	}
 }

@@ -34,8 +34,10 @@ public class TicketMachine {
 		for(int i=0; i<screenInfos.size(); i++) {
 			if(mvName.equals(screenInfos.get(i).getMvName())){
 				if(mvTime.equals(screenInfos.get(i).getMvTime())) {
-					System.out.println("TicketMachine : 영화를 예매하였습니다.");
-					screenInfos.get(i).setMvSeat(screenInfos.get(i).getMvSeat()-1);
+					if(screenInfos.get(i).getMvSeat()>=1) {
+						System.out.println("TicketMachine : '"+mvName+"' "+ mvTime+" 영화를 예매하였습니다.");
+						screenInfos.get(i).setMvSeat(screenInfos.get(i).getMvSeat()-1);
+					}
 				}
 			}
 		}
