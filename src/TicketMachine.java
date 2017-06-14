@@ -20,7 +20,7 @@ public class TicketMachine {
 	}
 
 	public List<String> isPossibleReserveTime(String mvName) {
-		System.out.println("TicketMachine : Employee에게 영화에 대한 정보를 알려준다.");
+		System.out.println("TicketMachine : Employee에게 영화에 대한 시간 정보를 알려줍니다.");
 
 		for (int i = 0; i < screenInfos.size(); i++) {
 			if (mvName.equals(screenInfos.get(i).getMvName())) {
@@ -35,7 +35,7 @@ public class TicketMachine {
 			if(mvName.equals(screenInfos.get(i).getMvName())){
 				if(mvTime.equals(screenInfos.get(i).getMvTime())) {
 					if(screenInfos.get(i).getMvSeat()>=1) {
-						System.out.println("TicketMachine : '"+mvName+"' "+ mvTime+" 영화를 예매하였습니다.");
+						System.out.println("TicketMachine : 영화를 예매하였습니다.");
 						screenInfos.get(i).setMvSeat(screenInfos.get(i).getMvSeat()-1);
 					}
 				}

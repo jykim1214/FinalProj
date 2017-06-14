@@ -20,7 +20,7 @@ public class Customer {
 	public void askMovieTime(Employee employee) {
 		// 임의로 영화를 하나 지정해준다.
 		mvName = movies.get(0);
-		System.out.println("Customer : Employee에게 '미녀와야수'영화를 보고싶다고 말합니다.");
+		System.out.println("Customer : Employee에게 '미녀와야수'영화 예매 가능한 시간을 물어봅니다.");
 
 		mvTime = employee.askMvTime(this, mvName);
 	}

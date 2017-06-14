@@ -19,13 +19,14 @@ public class Director {
 		ScreenInfo screenInfo = new ScreenInfo();
 		MovieDisplay mvDisplay = new MovieDisplay();
 		TicketMachine ticketMachine = new TicketMachine();
-
+		
 		mvDisplay.setMovieInformation(mvInfo);
 		ticketMachine.setScreenInformation(screenInfo);
 
 		System.out.println("Director : Customer에게 최신 영화정보를 확인하도록 지시합니다.");
 		customer.findNewMovie(mvDisplay);
 		
+		System.out.println("Director : Customer에게 영화 시간에 대한 정보를 물어보도록 지시합니다.");
 		customer.askMovieTime(employee);
 
 		System.out.println("Director : Customer에게 영화를 예매하도록 지시합니다.");

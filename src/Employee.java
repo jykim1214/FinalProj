@@ -12,7 +12,7 @@ public class Employee {
 	}
 
 	public List<String> askMvTime(Customer customer, String mvName) {
-		System.out.println("Employee : Ticketmachine에게 A영화에 대한 정보를 물어봅니다.");
+		System.out.println("Employee : Ticketmachine에게 '"+mvName+"'영화에 대한 정보를 물어봅니다.");
 		mvTime = ticketMachine.isPossibleReserveTime(mvName);
 		
 		System.out.print("Employee : '"+mvName+"' 영화의 현재 예매 가능한 시간은 ");
@@ -25,7 +25,7 @@ public class Employee {
 	}
 
 	public void reserveMovie(Customer customer, String mvName, String mvTime) {
-		System.out.println("Employee : 영화를 예매하겠습니다.");
+		System.out.println("Employee : '"+mvName+"' "+mvTime+" 영화를 예매하겠습니다.");
 		ticketMachine.doReserve(customer, mvName, mvTime);
 	}
 
