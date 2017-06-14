@@ -13,7 +13,7 @@ public class Employee {
 
 	public List<String> askMvTime(Customer customer, String mvName) {
 		System.out.println("Employee : Ticketmachine에게 A영화에 대한 정보를 물어봅니다.");
-		mvTime = ticketMachine.isPossibleReserve(mvName);
+		mvTime = ticketMachine.isPossibleReserveTime(mvName);
 		
 		System.out.print("Employee : '"+mvName+"' 영화의 현재 예매 가능한 시간은 ");
 		for(int i=0; i<mvTime.size(); i++) {

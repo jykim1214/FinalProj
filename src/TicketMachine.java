@@ -19,7 +19,7 @@ public class TicketMachine {
 		scInfo.addAll(screenInfos);
 	}
 
-	public List<String> isPossibleReserve(String mvName) {
+	public List<String> isPossibleReserveTime(String mvName) {
 		System.out.println("TicketMachine : Employee에게 영화에 대한 정보를 알려준다.");
 
 		for (int i = 0; i < screenInfos.size(); i++) {
@@ -42,5 +42,4 @@ public class TicketMachine {
 			}
 		}
 	}
-
 }
