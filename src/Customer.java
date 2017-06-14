@@ -4,9 +4,9 @@ import java.util.List;
 // ¼Õ´Ô
 public class Customer {
 
-	String mvName;
-	List<String> movies = new ArrayList<String>();
-	List<String> mvTime = new ArrayList<String>();
+	private String mvName;
+	private List<String> movies = new ArrayList<String>();
+	private List<String> mvTime = new ArrayList<String>();
 
 	public Customer() {
 

@@ -4,8 +4,8 @@ import java.util.List;
 // 예매기계
 public class TicketMachine {
 
-	List<ScreenInfo> screenInfos = new ArrayList<ScreenInfo>();
-	List<String> mvTime = new ArrayList<String>();
+	private List<ScreenInfo> screenInfos = new ArrayList<ScreenInfo>();
+	private List<String> mvTime = new ArrayList<String>();
 
 	public TicketMachine() {
 		screenInfos.add(new ScreenInfo("미녀와야수", "2시", "1관", 10));
