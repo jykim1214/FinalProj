@@ -8,7 +8,7 @@ public class Customer {
 	List<String> movies = new ArrayList<String>();
 	List<String> mvTime = new ArrayList<String>();
 
-	public Customer(String customerName) {
+	public Customer() {
 
 	}
 

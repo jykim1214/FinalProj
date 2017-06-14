@@ -10,8 +10,7 @@ public class Director {
 		System.out.println("Director : 시나리오를 시작합니다.");
 
 		System.out.println("Director : Customer를 생성합니다.");
-		String customerName = "김진영";
-		Customer customer = new Customer(customerName);
+		Customer customer = new Customer();
 
 		System.out.println("Director : Employee를 생성합니다.");
 		Employee employee = new Employee();
