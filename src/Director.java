@@ -20,7 +20,10 @@ public class Director {
 		MovieDisplay mvDisplay = new MovieDisplay();
 		TicketMachine ticketMachine = new TicketMachine();
 		
+		System.out.println("Director : MovieDisplay에게 MovieInfo로 부터 영화 정보를 받아오도록 지시합니다.");
 		mvDisplay.setMovieInformation(mvInfo);
+		
+		System.out.println("Director : TicketMachine에게 ScreenInfo로부터 상영정보를 받아오도록 지시합니다.");
 		ticketMachine.setScreenInformation(screenInfo);
 
 		System.out.println("Director : Customer에게 최신 영화정보를 확인하도록 지시합니다.");
